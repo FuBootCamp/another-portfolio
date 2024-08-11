@@ -1,5 +1,5 @@
-// This is a static page mocking an "Portfolio" 
-export default function PortfolioPage() {
+// This is a static page mocking an "Resume"
+export default function ResumePage() {
     return (
       <div className="container pt-4">
         <p>
@@ -19,7 +19,7 @@ export default function PortfolioPage() {
                   <div className="features-icons-icon d-flex">
                     <i className="bi-window m-auto text-primary" />
                   </div>
-                  <h3>PORTFOLIO PAGE</h3>
+                  <h3>RESUME PAGE</h3>
                   <p className="lead mb-0">
                     This theme will look great on any device, no matter the size!
                   </p>
@@ -30,7 +30,7 @@ export default function PortfolioPage() {
                   <div className="features-icons-icon d-flex">
                     <i className="bi-layers m-auto text-primary" />
                   </div>
-                  <h3>PORTFOLIO PAGE</h3>
+                  <h3>RESUME PAGE</h3>
                   <p className="lead mb-0">
                     Featuring the latest build of the new Bootstrap 5 framework!
                   </p>
@@ -41,7 +41,7 @@ export default function PortfolioPage() {
                   <div className="features-icons-icon d-flex">
                     <i className="bi-terminal m-auto text-primary" />
                   </div>
-                  <h3>PORTFOLIO PAGE</h3>
+                  <h3>RESUME PAGE</h3>
                   <p className="lead mb-0">
                     Ready to use with your own content, or customize the source
                     files!
@@ -63,4 +63,3 @@ export default function PortfolioPage() {
       </div>
     );
   }
-  
