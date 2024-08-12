@@ -8,13 +8,10 @@ export default function AboutMePage() {
         <div className="row">
 
            <div className="col-xl-6">
-              <h1>My Avatar</h1>
                <RenderImages src={myAvatar} alt="A happy old man picture from Free Pick, Thanks" classtype="col-xl-8" />
             </div>
 
             <div className="col-xl-6">
-               <h1>My Info</h1> 
-               <p></p>
                <h2>My name is Flavio Castorena</h2>
                <h2>I live in México</h2>
                <h2>I'm a Computer Systems Engineer</h2>

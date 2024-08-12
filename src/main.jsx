@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider,Navigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -8,8 +8,7 @@ import './index.css';
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
-import ProfilePage from './pages/ProfilePage';
+// import HomePage from './pages/HomePage';
 import AboutMePage from './pages/AboutMePage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
@@ -24,7 +23,7 @@ const router = createBrowserRouter([
     children: [
        {
          index: true,
-         element: <AboutMePage />,
+         element: <Navigate to="/aboutme" replace />,
        },
        {
          path: 'aboutme',
@@ -39,7 +38,7 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: 'RESUME',
+        path: 'resume',
         element: <ResumePage />,
       },
     ],
