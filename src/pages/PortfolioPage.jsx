@@ -1,65 +1,73 @@
-// This is a static page mocking an "Portfolio" 
+// Profile  
+import LinkImage from "../components/UI/Project/LinkImage";
+import taskboard from '../assets/taskboard.jpg'
+import cooldictionary from '../assets/cooldictionary.jpg'
+import firstblog from '../assets/firstblog.jpg'
+import payroll from '../assets/payroll.jpg'
+import blog from '../assets/blog.jpg'
+import notes from '../assets/notes.jpg'
+
 export default function PortfolioPage() {
     return (
-      <div className="container pt-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
-        <section className="features-icons bg-light text-center m-4">
-          <div className="container">
-            <div className="row p-2">
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-window m-auto text-primary" />
-                  </div>
-                  <h3>PORTFOLIO PAGE</h3>
-                  <p className="lead mb-0">
-                    This theme will look great on any device, no matter the size!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-layers m-auto text-primary" />
-                  </div>
-                  <h3>PORTFOLIO PAGE</h3>
-                  <p className="lead mb-0">
-                    Featuring the latest build of the new Bootstrap 5 framework!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-terminal m-auto text-primary" />
-                  </div>
-                  <h3>PORTFOLIO PAGE</h3>
-                  <p className="lead mb-0">
-                    Ready to use with your own content, or customize the source
-                    files!
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div className="container pt-2">
+
+        <div className="row">
+          <h3>Click on image to link</h3>
+          <div className = "col-xl-6">
+              <h2>TECH BLOG</h2>
+              <LinkImage 
+                image={blog} 
+                url="https://mvc-blog-k261.onrender.com" 
+                alt="Tech Blog deploy in Render" 
+              />
           </div>
-        </section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
+          <div className = "col-xl-6">
+              <h2>NOTES TAKER</h2>
+              <LinkImage 
+                image={notes} 
+                url="https://express-notes-bbp8.onrender.com" 
+                alt="Notes Taker deploy in Render " 
+              />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className = "col-xl-6">
+              <h2>TASK BOARD</h2>
+              <LinkImage 
+                image={taskboard} 
+                url="https://fubootcamp.github.io/task-board/" 
+                alt="Task Board deploy in GituHub" 
+              />
+          </div>
+          <div className = "col-xl-6">
+              <h2>COOL DICTIONARY</h2>
+              <LinkImage 
+                image={cooldictionary} 
+                url="https://el-bicho7.github.io/the-cool-dictionary/" 
+                alt="Cool Dictionary deploy in GituHub" 
+              />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className = "col-xl-6">
+              <h2>MY FIRST BLOG</h2>
+              <LinkImage 
+                image={firstblog} 
+                url="https://fubootcamp.github.io/blogging-DOMpower/" 
+                alt="My first blog deploy in GituHub" 
+              />
+          </div>
+          <div className = "col-xl-6">
+              <h2>PAYROLL MANAGER</h2>
+              <LinkImage 
+                image={payroll} 
+                url="https://fubootcamp.github.io/js-payroll-manager" 
+                alt="Payroll manager deploy in GituHub" 
+              />
+          </div>
+        </div>
       </div>
     );
   }
